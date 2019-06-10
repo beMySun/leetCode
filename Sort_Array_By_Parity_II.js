@@ -3,24 +3,16 @@
  * @return {number[]}
  */
 
-// https://leetcode.com/problems/sort-array-by-parity-ii/
-
-/**
- * Given an array A of non-negative integers, half of the integers in A are odd, and half of the integers are even.
-
-  Sort the array so that whenever A[i] is odd, i is odd; and whenever A[i] is even, i is even.
-
-  You may return any answer array that satisfies this condition.
- * 
- */
-
 /**
   * 61 / 61 test cases passed.
     Status: Accepted
     Runtime: 96 ms
-    Memory Usage: 41.6 MB
+		Memory Usage: 41.6 MB
+		Your runtime beats 92.36 % of javascript submissions.
   * 
   */
+
+// https://leetcode.com/problems/sort-array-by-parity-ii/
 
 var sortArrayByParityII = function(A) {
   let odds = A.filter(a => a % 2 === 0);
