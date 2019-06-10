@@ -1,9 +1,4 @@
 /**
- * @param {number[]} A
- * @return {number[]}
- */
-
-/**
   * 61 / 61 test cases passed.
     Status: Accepted
     Runtime: 96 ms
@@ -14,6 +9,10 @@
 
 // https://leetcode.com/problems/sort-array-by-parity-ii/
 
+/**
+ * @param {number[]} A
+ * @return {number[]}
+ */
 var sortArrayByParityII = function(A) {
   let odds = A.filter(a => a % 2 === 0);
   let evens = A.filter(a => a % 2 !== 0);
@@ -22,7 +21,6 @@ var sortArrayByParityII = function(A) {
   let evensGuard = 1;
   for (let i = 0; i < odds.length; i++) {
     res[oddsGuard] = odds[i];
-
     oddsGuard += 2;
   }
   for (let i = 0; i < evens.length; i++) {
